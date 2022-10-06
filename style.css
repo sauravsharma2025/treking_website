@@ -1,0 +1,23 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+  
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    list-style-type: none;
+    margin-top: 10px;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    gap: 15px;
+    text-transform:uppercase;
+    margin-left: 210px;
+}
+.logo-div img{
+    width: auto;
+    
+}
