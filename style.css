@@ -1,7 +1,7 @@
 *{
     font-family: sans-serif;
     box-sizing: border-box;
-  
+    line-height: 140%;
     margin: 0px;
     padding: 0px;
 }
@@ -15,9 +15,50 @@
     display: flex;
     gap: 15px;
     text-transform:uppercase;
-    margin-left: 210px;
+    margin-left: 190px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    height: max-content;
+    color: #121212;
+    transition: 0.5s;
 }
 .logo-div img{
     width: auto;
     
 }
+.nav-list a{
+    text-decoration: none;
+}
+
+
+.mySlides {
+    background-size: cover;
+    background-position: center bottom;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.prev{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
