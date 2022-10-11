@@ -19,7 +19,6 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    height: max-content;
     color: #121212;
     transition: 0.5s;
 }
@@ -35,10 +34,11 @@
 .mySlides {
     background-size: cover;
     background-position: center bottom;
-    height: 700px;
-    display: flex;
+    height: 93vh;
+    display:block;
     align-items: center;
     justify-content: center;
+
 }
 .next{
     position: absolute;
