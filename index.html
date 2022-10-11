@@ -35,19 +35,30 @@
         <img class="mySlides" src="https://www.thecrazymountaineers.com/assets/front/images/banner1.jpg">
       
         <button class="w3-button prev" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="know-more">Know More</button>
+        <button class="know-more">Know More <span class="icon_know_more"><img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/darrow.svg" alt="" data-loaded="true"></span></button>
         <button class="w3-button next" onclick="plusDivs(1)">&#10095;</button>
       </div>
       <div class="search-trek">
-        <select placeholder="Select Location">
+        <select class="select_loc">
             <option>Select Location</option>
-            <option>kadarkhata</option>
-        <option>Goa</option></select>
-        <select >
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="Ladakh">Ladakh</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Bagmati Zone">Bagmati Zone</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Gandaki Zone">Gandaki Zone</option>
+            <option value="Kilimanjaro Region">Kilimanjaro Region</option>
+        </select>
+        <select class="select_season" >
             <option>Select Season</option>
-            <option>kadarkhata</option>
-            <option>Goa</option></select> 
-            <button class="explore">Explore</button>
+            <option value="Winter Treks (November, December, January, February, March)" data-select2-id="select2-data-8-hvlr">Winter Treks (November, December, January, February, March)</option>
+            <option value="Summer Treks (April, May, June)" data-select2-id="select2-data-9-c7dv">Summer Treks (April, May, June)</option>
+            <option value="Monsoon Treks (July, August)" data-select2-id="select2-data-10-x30e">Monsoon Treks (July, August)</option>
+            <option value="Autumn Treks (September, October, November)" data-select2-id="select2-data-11-xocn">Autumn Treks (September, October, November)</option>
+        </select> 
+        <button class="btn expbtn">Explore</button>
       </div>
 </body>
 </html>
