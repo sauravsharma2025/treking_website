@@ -34,7 +34,7 @@
 .mySlides {
     background-size: cover;
     background-position: center bottom;
-    height: 93vh;
+ 
     display:block;
     align-items: center;
     justify-content: center;
@@ -80,9 +80,7 @@
 .know-more .icon_know_more{
     margin-left: 10px;
 }
-.carousel{
-    /* position: relative; */
-}
+
 .search-trek{
     position:absolute;
     bottom: 0;
@@ -94,6 +92,7 @@
     left: 20%;
     z-index: 5;
     background: transparent;
+    max-height: 17px;
     /* border-bottom: 2px solid #cfd8dd; */
 }
 .search-trek .select_loc{
