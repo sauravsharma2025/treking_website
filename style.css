@@ -123,4 +123,16 @@
 .search-trek .btn:hover {
     background-color: rgba(238, 48, 56, 0.9);
 }
+.cart-parent{
+    width: 30%;
+}
+.cart-img img{
+    width: 300px;
+    border-radius: 10px;
+}
+.cart-content{
+    display: flex;
+    column-gap: 164px;
+    flex-wrap: wrap;
+}
 
