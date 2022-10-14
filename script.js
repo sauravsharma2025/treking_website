@@ -15,3 +15,13 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+var div = document.createElement("div");
+div.id =  "mydiv";
+div.style.border = "5px solid black";
+div.style.display = "flex";
+div.style.position = "absolute";
+div.innerHTML = "Divya Gupta";
+
+document.getElementById("mydiv_id").appendChild(div);
+

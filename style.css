@@ -136,3 +136,23 @@
     flex-wrap: wrap;
 }
 
+.cart-view-btn{
+    border-radius: 25px;
+    background-color: rgba(238, 48, 56, 0.9);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+       
+}
+.cart-content .cart-View-Details-btn {
+    text-align: center;
+
+
+}
+#mydiv{
+    border: none;
+    font-size: 20px;
+
+}
