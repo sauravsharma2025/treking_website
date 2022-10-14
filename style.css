@@ -124,7 +124,10 @@
     background-color: rgba(238, 48, 56, 0.9);
 }
 .cart-parent{
-    width: 30%;
+    
+    display:flex;
+    gap: 20px;
+    position: relative;
 }
 .cart-img img{
     width: 300px;
@@ -146,13 +149,23 @@
     font-weight: 400;
        
 }
-.cart-content .cart-View-Details-btn {
-    text-align: center;
-
-
+.top-picks img{
+    border-radius: 10px;
+    width:100%;
+    height: 100px;
 }
 #mydiv{
     border: none;
     font-size: 20px;
+}
+.cart_para{
+    height: 300px;
+    border: 1px solid black;
+    width: 500px;
 
+}
+.top-picks{
+    color: #fdfdfd;
+    font-size: 22px;
+    margin-bottom: 5px;
 }

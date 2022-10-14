@@ -1,0 +1,42 @@
+step1():iterate in array one and compare every element with array two
+step2:if found put in new array otherwsie drop
+New array will have intersected element
+algo for iteration:
+step1 hold one element of array and compare with all element
+step2:if found  than store in new array otherwsie go to nxt value
+
+ <!-- <div class="cart-img">
+            <img src="https://trekthehimalayas.com/wp-content/uploads/2021/12/Winter-Kuari-Pass-Naveen-Rana-17.jpeg"
+                alt="">
+        </div> -->
+        <!-- <div class="cart-content" id="cart_content">
+            <div class="duration">
+                <img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/duration.svg">
+                <div class="info">
+                    <p>Duration</p>
+                    <p>6 days</p>
+                </div>
+            </div>
+            <div class="approx">
+                <img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/approx.svg">
+                <div class="info">
+                    <p>Duration</p>
+                    <p>6 days</p>
+                </div>
+            </div>
+            <div class="approx">
+                <img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/approx.svg">
+                <div class="info">
+                    <p>Duration</p>
+                    <p>6 days</p>
+                </div>
+            </div>
+            <div class="approx">
+                <img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/approx.svg">
+                <div class="info">
+                    <p>Duration</p>
+                    <p>6 days</p>
+                </div>
+            </div>
+            <div class="cart-View-Details-btn"><button class="cart-view-btn">View Details</button></div>
+        </div>  -->
