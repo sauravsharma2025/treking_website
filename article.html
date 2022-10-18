@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="a" name="para">Saurav</p>
+    <p class="a">Saurav</p>
+    <p class="a">Saurav</p>
+    <p class="a" name="para">Saurav</p>
+    <p class="b">Saurav</p>
+    <p id='unique'>Manoj</p>
+</body>
+</html>
+<script>
+    let pElem=document.querySelectorAll('#unique');//targeting id element
+    pElem[0].style.backgroundColor = "orange";;//
+    let pElem1=document.querySelectorAll('.b');//targeting class b
+    pElem1[0].innerText="VSS";
+
+</script>console.log('SK@');
