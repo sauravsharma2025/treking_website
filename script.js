@@ -70,7 +70,7 @@ for(let i=0;i<data.length;i++){
   let top_picks=`   <div class="wrap-top-pick">
   <div class="img_div" style='background-image: url("${data[i].img}");'>
   <div class="text-over-img">
-  <h4>Kedarkantha Peak Trek</h4>
+  <h3>Kedarkantha Peak Trek</h3>
   <p>Uttarakhand</p>
   </div>
   </div>
@@ -85,21 +85,21 @@ for(let i=0;i<data.length;i++){
       <div class="approx">
           <img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/approx.svg">
           <div class="detail-dur">
-              <p>Duration</p>
+              <p>Approx</p>
               <p>6 Days</p>
           </div>
       </div>
       <div class="grade">
           <img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/grade.svg">
           <div class="detail-dur">
-              <p>Duration</p>
+              <p>Grade</p>
               <p>6 Days</p>
           </div>
       </div>
       <div class="alt">
           <img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/altitude.svg">
           <div class="detail-dur">
-              <p>Duration</p>
+              <p>Altitude</p>
               <p>6 Days</p>
           </div>
       </div>
