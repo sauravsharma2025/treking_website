@@ -5,20 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+        outline: none;
+        }
+        .filter_box{
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 900;
+            margin: 60px;
+        }
+        .table{
+            margin:60px;
+            background: #faf5f5;
+          
+
+        }
+        thead,tbody,tr{
+            display: table;
+            width: 99%;
+            table-layout: fixed;
+
+        }
+        th{
+            text-align: left;
+        }
+        thead{
+            padding: 10px 0 10px 15px;
+            border: 0;
+        }
+        .sec-tr{
+            padding-left: 0px;
+            background: #fff;
+    border-radius: 15px;
+    margin-top: 15px;
+    border: 0;
+    padding: 0 0 0 15px;
+    box-shadow: 0px 0px 20px #dbdbdb;
+}
+ 
+thead ,tbody, tr{
+    display: table;
+    width: 99%;
+    table-layout: fixed;
+}  
+.booking_btn{
+    border:1px solid red;
+    color: red;
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 10px; 
+} 
+.booking_btn_col{
+    display: flex;
+    gap: 10px;
+}    
+    </style>
 </head>
+
 <body>
-    <p class="a" name="para">Saurav</p>
-    <p class="a">Saurav</p>
-    <p class="a">Saurav</p>
-    <p class="a" name="para">Saurav</p>
-    <p class="b">Saurav</p>
-    <p id='unique'>Manoj</p>
+    <div class="booking_div">
+        <div class="filter_box">
+            <div class="filter_box_title">Search by date</div>
+            <div class="filter_box_calender">
+                <input type="date">
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Trek Name</th>
+                    <th>Status</th>
+                    <th>Cost In Rupees</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="booking_avl">
+                
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
 <script>
-    let pElem=document.querySelectorAll('#unique');//targeting id element
-    pElem[0].style.backgroundColor = "orange";;//
-    let pElem1=document.querySelectorAll('.b');//targeting class b
-    pElem1[0].innerText="VSS";
+let book_data=[
+    {
+        trek_name:'Winter Kuari Pass Trek',
+        status:'Open',
+        Cost:'11,100'
+    },
+    {
+        trek_name:'Winter Kuari Pass Trek',
+        status:'Open',
+        Cost:'11,100'
+    },
+    {
+        trek_name:'Winter Kuari Pass Trek',
+        status:'Open',
+        Cost:'11,100'
+    },
+    {
+        trek_name:'Winter Kuari Pass Trek',
+        status:'Open',
+        Cost:'11,100'
+    },
+    {
+        trek_name:'Winter Kuari Pass Trek',
+        status:'Open',
+        Cost:'11,100'
+    },
+]
+for(let i=0;i<book_data.length;i++){
 
-</script>console.log('SK@');
+ let tbodyElem=document.createElement('div');
+let tr=document.createElement('tr');
+tr.className='sec-tr';
+let td=document.createElement('td');
+td.innerText=book_data[i].trek_name;
+let td1=document.createElement('td');
+td1.innerText=book_data[i].status;
+let td2=document.createElement('td');
+td2.innerText=book_data[i].Cost;
+let td3=document.createElement('td');
+td3.className='booking_btn_col'
+let td3_a=document.createElement('a');
+td3_a.className='booking_btn'
+td3_a.innerHTML='More_Info<img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/darrow.svg">';
+td3.append(td3_a)
+let td3_a1=document.createElement('a');
+td3_a1.className='booking_btn'
+td3_a1.innerHTML='BookNow<img src="https://trekthehimalayas.com/wp-content/themes/TTH-ByClaruz/assets/icons/darrow.svg">';
+td3.append(td3_a1)
+tr.append(td)
+tr.append(td1)
+tr.append(td2)
+tr.append(td3)
+tbodyElem.append(tr)
+
+ document.getElementById('booking_avl').append(tbodyElem)    
+}           
+</script>
+
