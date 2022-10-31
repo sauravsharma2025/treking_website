@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><script>
+//    const jamesBond = {
+//     firstName: "Daniel",
+//     lastName: "Craig",
+//     getFullName: function () {
+//       return `${this.firstName} ${this.lastName}`;
+//     },
+//   };
+//   console.log(jamesBond.getFullName());
+
+//   function myname(){
+
+//   console.log('SK@12',this);
+// }
+//  myname();
+//  console.log('SK@12',window.p);
+
+//  const newone={
+//   name:'saurav',
+//   full:function(){
+//     return this.name
+//   }
+//  }
+//  console.log('SK@34',newone.full());
+
+//  let add = {
+//         num : 0,
+//         calc : function() {
+     
+//         // logs the add object
+//         document.write(this + ' ')
+     
+//         function innerfunc() {
+//             this.num += 1;
+//         // logs the window object
+//         document.write(this + ' ');
+     
+//         return this.num
+     
+//     } return innerfunc();
+//      }
+//     };
+     
+//     // logs NaN
+//     document.write(add.calc() + '<br>');
+//     function doSomething() {
+//         // enable the strict mode
+//         // 'use strict';
+//       console.log('SK@',this);
+//        // logs undefined
+//         document.write(this + '<br>')
+//             function innerFunction() {
+//               // Also logs undefined, indicating that
+//               // strict mode permeates to inner function scopes
+//                 document.write(this)
+//             }
+//         innerFunction();
+//     }
+ 
+// // function invocation
+// doSomething(); 
+// let arr=[]
+// let obj={1:0,2:0,0:0,7:0};
+// let obj1={3:0,4:0,'-1':0,1:0};
+// let obj2={7:0,8:0,9:0,11:0,12:0}
+// function myfun(){
+// for(let i=1;i<Object.keys(obj2).length;i++){
+//   // obj[i]=arr[i];
+//   if(!obj2.hasOwnProperty(i)){
+//     return console.log('SK@',i);
+//   }
+// }
+// }
+// myfun();
+
+
+// function mountEntity(lang){
+
+//   this.lang=lang
+// 	console.log(`Entity ${this} is mounted on ${this.lang}`);
+// }
+
+// mountEntity.call(this,'saurav');
+// let profile= {
+// fname: "Aniket",
+//     lname: "Thakur",
+//     isActive: false,
+//     address: {
+//       country: "India",
+//       state: "Mp",
+//       favMen: {
+//         actor: "Yash",
+//         cricketMen: "Virat",
+//         favPlayers: {
+//           cricketTeam: "Dhoni",
+//           footBall: "Ronaldo",
+//         },
+//       },
+//     },
+//   };
+
+//   const findKey = (obj, path) => {
+//     if (obj.hasOwnProperty(path)) {
+//       return true;
+//     }
+//     for (let i in obj) {
+//       if (typeof obj[i] === "object") {
+//         console.log("obj :", obj[i]);
+//         const result = findKey(obj[i], path);
+//         if (result) {
+//           return true;
+//         }
+//         console.log("Result :", result);
+//       }
+//     }
+//     return false;
+//   };
+//   console.log(findKey(profile, "footBall"));
+
+let arr=[2,2,1,1,1,2,2]
+let obj={};
+for(let i=0;i<arr.length;i++){
+// if(!obj.hasOwnProperty(arr[i])){
+//   obj[arr[i]]=1
+// }else{
+//   obj[arr[i]]+=1;
+// }
+obj[arr[i]]=obj[arr[i]]+1 || 1
+console.log('SK@',obj);
+}
+for(let p in obj){
+  if(obj[p]>(arr.length)/2){
+    console.log('SK@',p);
+  }
+}
+
+</script>
