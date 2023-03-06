@@ -1,0 +1,648 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    line-height: 140%;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    /* display: flex; */
+    list-style-type: none;
+    margin-top: 10px;
+    align-items: center;
+    max-width: 1140px;
+}
+.nav-list{
+    display: flex;
+    gap: 15px;
+    text-transform:uppercase;
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #121212;
+    transition: 0.5s;
+    padding: 15px;
+}
+.logo-div img{
+    width:auto;
+}
+
+.naviga{
+    position: fixed;
+    background-color: #fff;
+    z-index: 99;
+    top: 0px;
+    justify-content: space-between;
+    left: 0; right: 0;
+    align-items: center;
+    display: flex !important;
+}
+.nav-list a{
+    color: #000;
+    text-decoration: none;
+}
+.mySlides {
+    background-size: cover;
+    background-position: center bottom;
+ 
+    display:block;
+    align-items: center;
+    justify-content: center;
+
+}
+.next{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.prev{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.know-more{
+    position: absolute;
+    top: 300px;
+    left: 45%;
+    border: 1px solid #fdfdfd;
+    width: max-content;
+    padding: 12.5px 25px;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.know-more .icon_know_more{
+    margin-left: 10px;
+}
+
+.search-trek{
+    position:absolute;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    min-height: 32px;
+    box-sizing: border-box;
+    align-items: center;
+    left: 20%;
+    z-index: 5;
+    background: transparent;
+    max-height: 17px;
+    /* border-bottom: 2px solid #cfd8dd; */
+}
+.search-trek .select_loc{
+    padding: 20px ;
+    border-radius: 8px 7px 4px 3px !important;
+}
+
+.search-trek .select_season{
+    vertical-align: middle; padding: 20px ;
+    border-radius: 8px 7px 4px 3px !important;
+
+}
+.search-trek .btn{
+    cursor: pointer;
+    border-radius: 0px 6px 0 0;
+    background-color: #ee3038;
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 20px;
+    padding-left:60px;
+    padding-right: 60px;
+}
+.search-trek .btn:hover {
+    background-color: rgba(238, 48, 56, 0.9);
+}
+.cart-parent{
+    
+    display:flex;
+    gap: 20px;
+    position: relative;
+}
+.wrap-top-pick{
+    margin-left: 10px;
+}
+.img_div{
+    height: 300px;
+    /* height: auto; */
+    margin-bottom: 10px;
+    /* width: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+       } 
+       .top-picks-bottom{
+        display: flex;
+    width: 300px;
+    column-gap: 37px;
+    flex-wrap: wrap;
+    justify-content: center;
+       }
+       .dur{
+        display: flex;
+        gap: 10px;
+       }
+       .detail-dur{
+        line-height: 6px;
+       }
+       .approx{
+        display: flex;
+       }
+       .grade{
+        display: flex;
+       }
+       .alt{
+        display: flex;
+       }
+#view_detail-btn{
+    margin: 0 auto;
+    background: #ee3038;
+    width: max-content;
+    padding: 12.5px 25px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* margin-top: 25px; */
+    display: flex;
+    transition: 0.5s;
+    border: none;
+       }
+       .view-detail{
+        width: 300px;
+        text-align:center;
+       }
+       .top-pick-container, .trending-trek-body,.upcoming-trek-body {
+        display: flex;
+        gap: 10px;
+       }
+       .text-over-img{
+        position:absolute;
+        /* bottom: 120px; */
+        color: white;
+        font-size: 22px;
+        margin-bottom:5px ;
+        font-weight: 700;
+       }
+       .subtitle {
+        color: #ee3038;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+    }
+    p {
+        margin: 0 0 1em;
+        line-height: 1.4285em;
+        text-align: justify;
+    }
+    .top .left h2 {
+        font-size: 40px;
+    }
+    .top {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    .top .left{
+        display: flex;
+    }
+    .top .right{
+        display: flex;
+    }
+    .top .right .arrow:nth-child(1) {
+        margin-right: 20px;
+        opacity: 0.5;
+    }
+    .top .right .arrow {
+        border: 1px solid #707070;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .top .right .arrow i {
+        font-size: 14px;
+    }
+.images-area .mobile{
+    display: none;
+}
+.images-area{
+    display: flex;
+    gap: 15px;
+    margin-top: 70px;
+}
+.images-area .box .img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.img{
+    border-style: none;
+}
+.images-area .box{
+    position: relative;
+}
+.images-area .box:hover img {
+    transform: scale(1.05);
+}
+.images-area .box .cont p {
+    color: #000;
+}
+
+.images-area .box .cont .button{
+    position:absolute;
+    border: 1px solid #fdfdfd;
+    padding: 12.5px 25px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+*{
+    outline: none;
+    }
+    .filter_box{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 900;
+        margin: 60px;
+    }
+    .table{
+        margin:60px;
+        background: #faf5f5;
+      
+
+    }
+    thead,tbody,tr{
+        display: table;
+        width: 99%;
+        table-layout: fixed;
+
+    }
+    th{
+        text-align: left;
+    }
+    thead{
+        padding: 10px 0 10px 15px;
+        border: 0;
+    }
+    .sec-tr{
+        padding-left: 0px;
+        background: #fff;
+border-radius: 15px;
+margin-top: 15px;
+border: 0;
+padding: 0 0 0 15px;
+box-shadow: 0px 0px 20px #dbdbdb;
+}
+
+thead ,tbody, tr{
+display: table;
+width: 99%;
+table-layout: fixed;
+}  
+.booking_btn{
+border:1px solid red;
+color: red;
+font-size: 20px;
+padding: 4px;
+border-radius: 10px; 
+} 
+.booking_btn_col{
+display: flex;
+gap: 10px;
+} 
+.main_div{
+    width: 100%;
+    text-align: center;
+}
+.main_div_body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 60px 0px 60px;
+    padding: 15px;
+}
+.main_div_heading h5{
+    margin:0px ;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.main_div_heading h2{
+    font-size: 30px;
+    margin-top: 31px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fe771d;
+    
+}
+.main_div_body a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+#intro{
+    font-size: 18px;
+}
+.trending-trek, .upcoming-trek{
+    text-align: center;
+}
+/*  top location Section starts*/
+.top-loc-head{
+    text-align: center;
+    padding: 10px;
+}
+.top-loc{
+    margin: 10px;
+    padding: 50px;
+    background: #f0f8ff;
+}
+.loc-thumb{
+    background: white;
+    width: 17%;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.loc-thumb img{
+    border-radius:100%;
+    margin-top: 10px;
+}
+.top-loc-body{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
+.loc-thumb a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2b709c;
+}
+.loc-thumb p{
+    text-align: center;
+}
+/* Top section ends */
+/* Pilgrimage section starts*/
+.box{
+    background: #f9f9f9;
+    padding-bottom: 10px;
+    box-shadow: #ddd 1px 1px 1px;
+    text-align: center;
+    min-height: 550px;
+    margin-left: 40x;
+}
+.box h3 {
+    margin: 12px 0px;
+    font-weight: 700;
+    color: #2b709c;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.box ul {
+    list-style: none;
+    font-size: 16px;
+    padding: 0px;
+    line-height: 28px;
+    color: #696969;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bx {
+    font-family: 'boxicons'!important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+}
+.btn-wrap{
+    margin-top: 10px;
+}
+.btn-buy {
+    color: #fff;
+    font-weight: bold;
+}
+.btn-wrap a:hover {
+    color: #fff;
+}
+.btn-wrap a {
+    background: #2b709c;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+/* Pilgrimage section ends*/
+/* why choose the crazy mountaineers starts*/
+.section-bg {
+    background-color: #f8fbfe;
+}
+.section-title {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #124265;
+}
+.section-title p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #919191;
+    text-align: center;
+}
+.services .icon-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 5%);
+    margin-left: 50px;
+}
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+}
+.services .icon-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.services .icon-box .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+.services .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.services .icon-box .icon svg path {
+    transition: 0.5s;
+    fill: #f5f5f5;
+}
+.d-flex{
+    display: flex !important;
+}
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+.services .iconbox-blue i {
+    color: #47aeff;
+}
+.services .iconbox-orange i {
+    color: #ffa76e;
+}
+/*blog starts*/
+.blog-title a {
+    color: #2b709c;
+}
+.mb-auto, .my-auto {
+    margin-bottom: auto!important;
+}
+/*blog ends*/
+/*footer starts*/
+footer {
+    background-image: url(https://www.thecrazymountaineers.com/assets/front/images/footer.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #f7fafd;
+    padding: 130px 0px 5px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+footer ul {
+    list-style: none;
+    padding: 0px;
+}
+footer ul li a {
+    color: #fff !important;
+}
+.address{
+    color: #fff;
+}
+.copyright{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*footer ends*/
+/*media query starts*/
+@media (min-width: 992px){
+    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    }
+@media only screen and (max-width: 600px){
+    .box {
+        margin-bottom: 15px !important;
+    }
+    .picks .item-list .content{
+        height: 160px;padding: 0 10px;
+    }
+    .picks .item-list .content .icon img{
+        width:18px;
+    }
+    .services .icon-box {
+        padding: 20px 10px !important;
+    }
+    }
+@media (min-width: 768px){
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 32%;
+    max-width: 50%;
+}
+.mt-md-0, .my-md-0 {
+    margin-top: 0!important;
+}
+}
+@media (max-width: 1500px){
+        .container {
+            padding: 0 75px;
+        }
+    }
+           
+           
+/*media query ends*/    
